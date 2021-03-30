@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #5d8fc9;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .form-login {
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+.wrapper .form-login .form-input {
+  margin-bottom: 15px;
+}
+
+.wrapper .form-login .form-input input {
+  background-color: #ebf0fc;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
+.wrapper .form-login .btn button {
+  width: 100%;
+  background-color: #007bff;
+  padding: 10px 0px;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+}
+
+.wrapper .form-login .header {
+  margin: 25px;
+}
+
+.wrapper .form-login .header h1 {
+  text-align: center;
+  font-size: 40px;
+}
+/*# sourceMappingURL=login.css.map */

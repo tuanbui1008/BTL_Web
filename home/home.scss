@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu {
+    list-style: none;
+}
+
+.clear-fix::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+
+.col {
+    float: left;
+}
+
+.col-3 {
+    width: 33.3334%;
+}
+
+.header {
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .nav {
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        &.nav-left {
+            align-items: flex-start;
+        }
+        &.nav-right {
+            align-items: flex-end;
+        }
+        .menu {
+            li {
+                a {
+                    display: block;
+                    padding: 10px 10px;
+                }
+            }
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    .logo {
+        flex-grow: 6;
+        h1 {
+            text-align: center;
+        }
+    }
+}
+
+.main-content {
+    .col-3 {
+        position: relative;
+        h1 {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            color: white;
+            font-size: 60px;
+            text-align: center;
+        }
+        padding: 10px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 30px;
+    .navigation {
+        flex-grow: 8;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        .menu-footer {
+            display: flex;
+            flex-direction: row;
+            li {
+                a {
+                    transition: all 0.3s;
+                    &:hover {
+                        color: brown;
+                    }
+                    display: block;
+                    padding: 10px 20px;
+                }
+            }
+        }
+    }
+    .form-input {
+        flex-grow: 2;
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            &::after {
+                bottom: 0;
+                position: absolute;
+                height: 1px;
+                content: "";
+                width: 100%;
+                background-color: black;
+            }
+            input {
+                padding: 10px 0px;
+                border: none;
+                outline: none;
+                font-size: 18px;
+            }
+        }
+    }
+}
